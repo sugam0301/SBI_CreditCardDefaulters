@@ -94,12 +94,12 @@ def trainRouteClient():
 # if __name__ == "__main__":
 #     app.run(port=port, debug=True)
 
-# if __name__ == '__main__':
-#     app.run(host="0.0.0.0", port=config.PORT)
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=config.PORT)
 
-if __name__ == "__main__":
-    port = int(os.getenv("PORT"))
-    #clApp = ClientApp()
-    host = '0.0.0.0'
-    httpd = simple_server.make_server(host=host,port=port, app=app)
-    httpd.serve_forever()
+# if __name__ == "__main__":
+#     port = int(os.getenv("PORT"))
+#     #clApp = ClientApp()
+#     host = '0.0.0.0'
+#     httpd = simple_server.make_server(host=host,port=port, app=app)
+#     httpd.serve_forever()
